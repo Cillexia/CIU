@@ -3,7 +3,7 @@ package cillexia.CIU;
 /**
 * CIColor (Cillexia): A cillexia project by Christian Bietsch
 * Website: www.cillexia.net
-* class: CIColor
+* YEAR 2022
 */
 public final class CIColor {
   /** Stores the color and alpha value */
@@ -28,6 +28,8 @@ public final class CIColor {
   public final int green() { return (c >> 16) & 255; }
   public final int blue() { return (c >> 8) & 255; }
   public final int alpha() { return c & 255; }
+  
+  public final int color() { return c; }
   
   public final boolean equal(CIColor c) { return this.c == c.c; }
 }
